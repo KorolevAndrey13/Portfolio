@@ -1,0 +1,265 @@
+*,
+html,
+body {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    font-family: "Manrope", Helvetica, sans-serif;
+    width: 100%;
+    /* background-color: #F5F5F5; */
+    background-color: #011627;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+a, 
+li{
+    letter-spacing: -0.03em;
+    color: #F5F5F5;
+}
+
+h1{
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 70px;  
+}
+
+h2{
+    padding-bottom: 30px;
+    font-size: 60px;
+}
+
+h3{
+padding-bottom: 30px;
+font-size: 30px;
+}
+
+main{
+    width: 1400px;
+    margin: 0 auto;
+    background: #011627;  
+    /* padding: 0 125px;  */
+    background-image: url('/resources/dark_background.png');
+}
+
+section{
+    margin-bottom: 150px;
+    width: 100%;
+    padding: 0 120px;
+}
+
+.section__hero{
+    padding: 0;
+}
+.container{
+    /* max-width: 1180px; */
+    /* padding: 0 15px; */
+    margin: 0 auto;
+}
+
+/* section hero */
+
+.section__hero{
+    
+}
+
+
+.hero__head {
+    display: block;
+    position: absolute; 
+    width: 850px;
+    /* height: 205px; */
+    bottom: 94px;
+    left: 120px;
+    text-align: left;
+    color: white;
+}
+
+.hero__inner{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 960px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    background-image: url('../resources/night.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%; 
+}
+
+.hero__text {
+    display: block;
+    position: absolute; 
+    width: 430px;
+    bottom: 328px;
+    left: 125px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.32px;
+    text-align: left;
+    color: white;
+}
+
+.gradient__img{
+    display: block;
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    width: 100%;
+}
+
+
+/* меню */
+
+.section__menu{
+
+}
+.menu{
+   
+}
+
+.menu__skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.menu__h2{
+
+}
+
+
+.menu__cross{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    background-image: url('../resources/cross.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.menu-nav{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.menu__list{
+   
+}
+.menu__item{
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu__link{
+    display: inline-block;
+    width: 252px;
+    height: 67px;
+    line-height: 67px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    opacity: 75%;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    /* background: #00C9E0; */
+  
+    color: white;
+}
+
+.menu__link:hover{
+    border-bottom: 1px solid #00C9E0;
+    opacity: 100%;
+}
+
+/* обо мне */
+ 
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description{
+    width: 415px;
+    font-size: 30px;
+    text-align: justify;
+   
+}
+
+.about__foto{
+    width: 50%;
+   
+}
+
+/* проекты */
+
+.projects__list{
+    /* display: flex; */
+    
+    /* flex-wrap: wrap; */
+}
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    /* width: 500px; */
+    /* height: 500px; */
+    padding-bottom: 30px;
+}
+
+.project:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.project__img{
+    
+    width: 645px;
+    height: 424px;
+}
+
+.project__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    padding: 20px;
+    align-items: center;
+}
+
+.project__btn{
+    display: block;
+    width: 100%;
+    height: 62px;
+    border-radius: 200px;
+    cursor: pointer;
+    background-color: #00C9E0;
+    color: #F5F5F5;
+    line-height: 62px;
+    font-weight: 400;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* компетенции */
+
+.competences__text{
+padding-bottom: 30px;
+}
