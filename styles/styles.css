@@ -102,7 +102,7 @@ section:nth-last-child(2){
 }
 
 a.logo{
-    font-size: 60px;
+    font-size: 20px;
     line-height: 60px;
     text-decoration: none;
 }
@@ -135,7 +135,7 @@ a.logo{
     display: block;
     position: relative;
     width: 100%;
-    height: 628px;
+    height: 616px;
     margin: 0 auto;
     /* border: 1px solid red; */
     background-image: url('../resources/night.jpg');
@@ -400,28 +400,55 @@ a.logo{
     display: flex;
     width: 24px;
     height: 70px;
-    margin-bottom: 12px;
+    margin-right: 12px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
 }
 
 .phonenumber{
-    display: inline-block;
-    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
     margin: 15px;
     color: #f5f5f5;
     text-decoration: none;
 }
 
+.phonenumber::before{
+    content: '';
+    display: flex;
+    width: 52px;
+    height: 52px;
+    margin-right: 12px;
+    background-image: url('../resources/tel.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+
 .mail{
-    display: inline-block;
+    display: flex;
     margin: 15px;
-    font-size: 60px;
-    width: fit-content;
+    font-size: 30px;
+    width: 100%;
     color: #f5f5f5 ;
-    opacity: 50%;
-    border-bottom: 1px solid #f5f5f5;
+    /* opacity: 50%; */
+    /* border-bottom: 1px solid #f5f5f5; */
+    text-decoration: none;
+}
+
+.mail::before{
+    content: '';
+    display: flex;
+    width: 52px;
+    height: 52px;
+    margin-right: 12px;
+    background-image: url('../resources/mail.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
     text-decoration: none;
 }
 
@@ -436,6 +463,7 @@ a.logo{
     height: 52px;
     object-fit: contain;
     margin: 20px;
+    opacity: 70%;
 }
 
 /* footer */
