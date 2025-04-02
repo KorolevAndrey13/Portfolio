@@ -13,7 +13,7 @@ body{
     font-family: "Manrope", Helvetica, sans-serif;
     width: 100%;
     /* background-color: #F5F5F5; */
-    background-color: #011627;
+    background-color: #173c5a;
 }
 
 h1, 
@@ -34,13 +34,13 @@ h1{
 }
 
 h2{
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     font-size: 60px;
 }
 
 h3{
-padding-bottom: 30px;
-font-size: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
 }
 
 main{
@@ -48,7 +48,7 @@ main{
     margin: 0 auto;
     background: #011627;  
     /* padding: 0 125px;  */
-    background-image: url('/resources/dark_background.png');
+    background-image: url('/resources/background.jpg');
 }
 
 section{
@@ -57,8 +57,28 @@ section{
     padding: 0 120px;
 }
 
+section:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+section:nth-last-child(2){
+    margin-bottom: 0;
+}
+
+/* section::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 30px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+} */
+
 .section__hero{
     padding: 0;
+    margin: 0;
 }
 .container{
     /* max-width: 1180px; */
@@ -66,12 +86,39 @@ section{
     margin: 0 auto;
 }
 
+/* header */
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+}
+
+.logo__box{
+    width: 67px;
+    height: 67px;
+    color: #F5F5F5;
+}
+
+a.logo{
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.header__inner{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    margin: 0 auto;
+}
 /* section hero */
 
 .section__hero{
-    
+    /* z-index: -1; */
 }
-
 
 .hero__head {
     display: block;
@@ -88,7 +135,7 @@ section{
     display: block;
     position: relative;
     width: 100%;
-    height: 960px;
+    height: 628px;
     margin: 0 auto;
     /* border: 1px solid red; */
     background-image: url('../resources/night.jpg');
@@ -115,7 +162,6 @@ section{
     position: absolute; 
     bottom: 0;
     left: 0;
-    text-align: left;
     width: 100%;
 }
 
@@ -123,10 +169,25 @@ section{
 /* меню */
 
 .section__menu{
-
+   position: sticky;
+   top: 0;
+   margin: 0;
+   padding: 0;
 }
+
+.section__menu::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 0;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
 .menu{
-   
+    
 }
 
 .menu__skills{
@@ -145,7 +206,7 @@ section{
     display: block;
     width: 24px;
     height: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 21px;
     background-image: url('../resources/cross.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -154,16 +215,18 @@ section{
 .menu-nav{
     display: flex;
     justify-content: space-evenly;
-   
+    background-color: #011627;
 }
-.menu__list{
-   
+.menu__list, .footer-menu__list {
+   display: flex;
+   justify-content: space-around;
 }
 .menu__item{
     display: inline-block;
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
+    align-content: end;
 }
 .menu__link{
     display: inline-block;
@@ -179,7 +242,6 @@ section{
     /* border-radius: 5px; */
     cursor: pointer;
     /* background: #00C9E0; */
-  
     color: white;
 }
 
@@ -190,25 +252,53 @@ section{
 
 /* обо мне */
  
-.about{
+.section__about::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 70px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.about__inner{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.description{
+.about__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 415px;
     font-size: 30px;
     text-align: justify;
    
 }
+.about__head{
+    /* margin-bottom: 30px; */
+}
 
 .about__foto{
     width: 50%;
-   
+    border-radius: 30px;
 }
 
 /* проекты */
+
+.section__projects::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 70px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
 
 .projects__list{
     /* display: flex; */
@@ -239,7 +329,7 @@ section{
     flex-direction: column;
     justify-content: center;
     width: 450px;
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
 }
 
@@ -260,6 +350,116 @@ section{
 
 /* компетенции */
 
-.competences__text{
-padding-bottom: 30px;
+.competencies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: center;
+    grid-auto-columns: auto;
+    grid-auto-flow: row;
+}
+
+.competencies__inner{
+    padding: 15px;
+    background-color: #011627 ;
+    border: 1px solid #2c8b96;
+    border-radius: 15px;
+}
+
+.competencies__text{
+    font-size: 25px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+.section__competencies::before{
+    content: '';
+    display: block;
+    width: 24px;
+    height: 70px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+/* Контакты */
+
+.contacts__inner{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 30px;
+}
+
+.contacts::before{
+    content: '';
+    display: flex;
+    width: 24px;
+    height: 70px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.phonenumber{
+    display: inline-block;
+    font-size: 60px;
+    margin: 15px;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.mail{
+    display: inline-block;
+    margin: 15px;
+    font-size: 60px;
+    width: fit-content;
+    color: #f5f5f5 ;
+    opacity: 50%;
+    border-bottom: 1px solid #f5f5f5;
+    text-decoration: none;
+}
+
+.contacts__socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.messenger{
+    display: block;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    margin: 20px;
+}
+
+/* footer */
+
+footer{
+    padding: 0 120px;
+    height: 220px;
+    width: 1400px;
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+}
+
+.footer-nav{
+    margin: 0 auto;
+}
+
+.footer-menu__list{
+    padding: 33px 0;
+}
+
+.footer__text{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    opacity: 50%;
 }
