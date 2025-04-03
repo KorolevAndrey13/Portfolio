@@ -418,8 +418,8 @@ a.logo{
 .phonenumber::before{
     content: '';
     display: flex;
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     margin-right: 12px;
     background-image: url('../resources/tel.png');
     background-repeat: no-repeat;
@@ -442,8 +442,8 @@ a.logo{
 .mail::before{
     content: '';
     display: flex;
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     margin-right: 12px;
     background-image: url('../resources/mail.png');
     background-repeat: no-repeat;
@@ -459,8 +459,8 @@ a.logo{
 
 .messenger{
     display: block;
-    width: 52px;
-    height: 52px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     margin: 20px;
     opacity: 70%;
