@@ -45,91 +45,117 @@
                 </div> -->
                 <nav class="menu-nav">
                     <ul class="menu__list">
-                        <li class="menu__item"><div class="menu__cross"></div></li>
+                        <li class="menu__item">
+                            <div class="menu__cross"></div>
+                        </li>
                         <li class="menu__item"><a class="menu__link" href="#about">обо мне</a></li>
                         <li class="menu__item"><a class="menu__link" href="#projects">Мои проекты</a></li>
                         <li class="menu__item"><a class="menu__link" href="#competencies">компетенции</a></li>
                         <li class="menu__item"><a class="menu__link" href="#contacts">контакты</a></li>
-                        <li class="menu__item"><div class="menu__cross"></div></li>
+                        <li class="menu__item">
+                            <div class="menu__cross"></div>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </section>
         <section class="section__about" id="about">
-            <!-- можно добавить видео -->
-            <div class="about__inner">
-                <div class="about__description">
-                    <h2 class="about__head">Кто я?</h2>
-                    <p class="about__text">Привет! Меня зовут Королев Андрей. Я Frontend-разработчик. Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов. </p>
+            <div class="container">
+                <!-- можно добавить видео -->
+                <div class="about__inner">
+                    <div class="about__description">
+                        <h2 class="about__head">Кто я?</h2>
+                        <p class="about__text">Привет! Меня зовут Королев Андрей. Я Frontend-разработчик. Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов. </p>
+                    </div>
+                    <div class="about__foto-wrapper">
+                        <img class="about__foto" src="./resources/foto_riverside.jpg" alt="мое фото">
+                    </div>
+                    <!-- проверить -->
                 </div>
-                <img class="about__foto" src="./resources/foto_riverside.jpg" alt="мое фото">
             </div>
         </section>
         <!-- проекты -->
         <section class="section__projects" id="projects">
-            <div class="projects">
-                <h2>Мои проекты</h2>
-                <ul class="projects__list">
-                    <li class="project">
-                        <img class="project__img" class="project__img" src="./resources/portfolio.png" alt="портфолио">
-                        <div class="project__text">
-                            <h3>Мое портфолио</h3>
-                            <a class="project__btn" href="https://korolevandrey13.github.io/Portfolio/" target="blank">Просмотр  →</a>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img class="project__img" src="./resources/metrica.png" alt="Мебельный магазин">
-                        <div class="project__text">
-                            <h3>Сайт мебельного магазина Metrica</h3>
-                            <a class="project__btn" href="https://korolevandrey13.github.io/Metrica/" target="blank">←  Просмотр</a>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <img class="project__img" src="./resources/work_in_progress.png" alt="work in progress">
-                        <div class="project__text">
-                            <h3>Раздел в работе</h3>
-                            <a class="project__btn" href="404" target="blank">Просмотр  →</a>
-                        </div>
-                    </li>
-                </ul>
+            <!-- container -->
+            <div class="container">
+                <div class="projects">
+                    <h2>Мои проекты</h2>
+                    <ul class="projects__list">
+                        <li class="project">
+                            <!-- wrappers -->
+                            <div class="projects__list-wrapper">
+                                <img class="project__img" src="./resources/portfolio.png" alt="портфолио">
+                            </div>
+                            <div class="project__text">
+                                <h3>Мое портфолио</h3>
+                                <a class="project__btn" href="https://korolevandrey13.github.io/Portfolio/" target="blank">Просмотр  →</a>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="projects__list-wrapper">
+                                <img class="project__img" src="./resources/metrica.png" alt="Мебельный магазин">
+                            </div>
+                            <div class="project__text">
+                                <h3>Сайт мебельного магазина Metrica</h3>
+                                <a class="project__btn" href="https://korolevandrey13.github.io/Metrica/" target="blank">←  Просмотр</a>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="projects__list-wrapper">
+                                <img class="project__img" src="./resources/work_in_progress.png" alt="work in progress">
+                            </div>
+                            <div class="project__text">
+                                <h3>Раздел в работе</h3>
+                                <a class="project__btn" href="404" target="blank">Просмотр  →</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <!-- компетенции -->
         <section class="section__competencies" id="competencies">
-            <h2>Компетенции</h2>
-            <ul class="competencies">
-                <li class="competencies__inner">
-                    <h3>HTML и CSS</h3>
-                    <p class="competencies__text">Это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
-                </li>    
-                <li class="competencies__inner">
-                    <h3>Javascript</h3>
-                    <p class="competencies__text">Это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
-                </li>
-                <li class="competencies__inner">
-                    <h3>Адаптивная верстка</h3>
-                    <p class="competencies__text">Фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
-                </li>
-                <!-- <li class="competencies__inner">
-                    <h3>Применение нейросетей</h3>
-                    <p class="competencies__text">Последнее время нейросети все чаще и чаще мелькают в нашей жизни. Многие говорят, что они могут даже заменить программистов, но я считаю, что это отличный инструмент, который может упрощать жизнь программиста и брать на себя рутинные задачи. <br><br> Правильное построение запроса в нейросеть и грамотные правки - две составляющие успешного использования нейросетей в программировании</p>
-                </li>
-                <li class="competencies__inner">
-                    <h3>No-code программирование</h3>
-                    <p class="competencies__text">Очень часто разработчики сталкиваются с тем, что необходимо быстро сверстать сайт. Поэтому часто разработчики используют конструкторы сайтов для оперативной сборки проектов. </p>
-                </li> -->
-                <li class="competencies__inner">
-                    <h3>New competence</h3>
-                    <p class="competencies__text">In progress </p>
-                </li>
-            </ul>
+            <!-- container -->
+            <div class="container">
+                <h2>Компетенции</h2>
+                <ul class="competencies">
+                    <li class="competencies__inner">
+                        <h3>HTML и CSS</h3>
+                        <p class="competencies__text">Это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+                    </li>    
+                    <li class="competencies__inner">
+                        <h3>Javascript</h3>
+                        <p class="competencies__text">Это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+                    </li>
+                    <li class="competencies__inner">
+                        <h3>Адаптивная верстка</h3>
+                        <p class="competencies__text">Фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                    </li>
+                    <!-- <li class="competencies__inner">
+                        <h3>Применение нейросетей</h3>
+                        <p class="competencies__text">Последнее время нейросети все чаще и чаще мелькают в нашей жизни. Многие говорят, что они могут даже заменить программистов, но я считаю, что это отличный инструмент, который может упрощать жизнь программиста и брать на себя рутинные задачи. <br><br> Правильное построение запроса в нейросеть и грамотные правки - две составляющие успешного использования нейросетей в программировании</p>
+                    </li>
+                    <li class="competencies__inner">
+                        <h3>No-code программирование</h3>
+                        <p class="competencies__text">Очень часто разработчики сталкиваются с тем, что необходимо быстро сверстать сайт. Поэтому часто разработчики используют конструкторы сайтов для оперативной сборки проектов. </p>
+                    </li> -->
+                    <li class="competencies__inner">
+                        <h3>New competence</h3>
+                        <p class="competencies__text">In progress </p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="section__contacts" id="contacts">
             <div class="container">
                 <h2 class="contacts" id="contacts">Контакты</h2>
                 <div class="contacts__inner">
-                    <a class="phonenumber" href="tel:+79802404215" target="blank"><h4>+7 980 240-42-15</h4></a>
-                    <a class="mail" href="mailto:i@korolev-andrey.ru" target="blank"><h4>i@korolev-andrey.ru</h4></a>
+                    <a class="phonenumber" href="tel:+79802404215" target="blank">
+                        <h4>+7 980 240-42-15</h4>
+                    </a>
+                    <a class="mail" href="mailto:i@korolev-andrey.ru" target="blank">
+                        <h4>i@korolev-andrey.ru</h4>
+                    </a>
                     <div class="contacts__socials">
                         <a href="https://t.me/Andrey_Korolev13" target="blank"><img class="messenger" src="./resources/tg.png" alt="Телеграм"></a>
                         <a href="https://wa.me/89802404215" target="blank"><img class="messenger" src="./resources/whatsapp.png" alt="Whatsup"></a>
@@ -139,17 +165,18 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer-nav">
-            <ul class="footer-menu__list">
-                <li class="menu__item"><a class="menu__link" href="#about" target="blank">обо мне</a></li>
-                <li class="menu__item"><a class="menu__link" href="#projects" target="blank">Мои проекты</a></li>
-                <li class="menu__item"><a class="menu__link" href="#competences" target="blank">компетенции</a></li>
-                <li class="menu__item"><a class="menu__link" href="#contacts" target="blank">контакты</a></li>
-            </ul>
-        </div>
-        <div class="footer__text">
-            <span><a class="logo" href="#">АК</a></span>
-        </div>
+        <div class="container"></div>
+            <div class="footer-nav">
+                <ul class="footer-menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#about" target="blank">обо мне</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#projects" target="blank">Мои проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#competences" target="blank">компетенции</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#contacts" target="blank">контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer__text">
+                <span><a class="logo" href="#">АК</a></span>
+            </div>
     </footer>
 </body>
 </html>
