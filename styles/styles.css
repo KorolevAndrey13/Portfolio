@@ -517,7 +517,7 @@ footer{
     opacity: 50%;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1199px) {
 
     h1{
         font-weight: 400;
@@ -562,24 +562,12 @@ footer{
         margin-bottom: 0;
     }
     
-    /* section::before{
-        content: '';
-        display: block;
-        width: 24px;
-        height: 30px;
-        margin-bottom: 12px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
-    } */
-    
     .section__hero{
         padding: 0;
         margin: 0;
     }
     .container{
         width: 100%;
-        max-width: 1400px;
         margin: 0 auto;
         padding: 0 30px;
         /* border: 10px solid red; */
@@ -653,17 +641,6 @@ footer{
        max-width: 100%;
     }
     
-    /* .section__menu::before{
-        content: '';
-        display: block;
-        width: 24px;
-        height: 0;
-        margin-bottom: 12px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
-    } */
-    
     .menu{
         
     }
@@ -732,7 +709,7 @@ footer{
         content: '';
         display: block;
         width: 24px;
-        height: 70px;
+        height: 30px;
         /* margin-bottom: 12px; */
         background-repeat: no-repeat;
         background-size: contain;
@@ -750,7 +727,7 @@ footer{
         flex: 0 1 360px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         font-size: 25px;
         text-align: justify;
        
@@ -778,7 +755,7 @@ footer{
         content: '';
         display: block;
         width: 24px;
-        height: 50px;
+        height: 30px;
         margin-bottom: 12px;
         background-repeat: no-repeat;
         background-size: contain;
@@ -797,6 +774,10 @@ footer{
         /* height: 500px; */
         padding-bottom: 30px;
         column-gap: 30px;
+    }
+
+    .project:nth-last-child(1){
+        padding-bottom: 0;
     }
     
     .project:nth-child(2n){
@@ -837,7 +818,7 @@ footer{
         color: #F5F5F5;
         line-height: 55px;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 20px;
         text-decoration: none;
         text-align: center;
     }
@@ -879,7 +860,7 @@ footer{
         content: '';
         display: block;
         width: 24px;
-        height: 70px;
+        height: 30px;
         margin-bottom: 12px;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1000,42 +981,9 @@ footer{
 
 
 
-/* @media (max-width: 1199px) {
-    .container{
-        width: 100%;
-        max-width: 1199px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+@media (max-width: 992px) {
 
-    .section__hero{
-        margin: 0 auto;
-    }
-
-    .hero__head {
-        display: block;
-        position: absolute; 
-        max-width: 850px;
-        bottom: 70px;
-        left: 70px;
-        text-align: left;
-        color: white;
-        font-size: 50px;
-    }
-    
-    .hero__inner{
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 329px;
-        margin: 0 auto;
-        background-image: url('../resources/night.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: 50% 50%; 
-    }
-} */
-
+}
 /* @media (max-width: 768px) {
     
     .hero__head {
