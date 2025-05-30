@@ -10,15 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <!--  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body>
     <header class="header">
@@ -26,14 +18,15 @@
             <!-- <div class="logo__box">
                 <a href="#menu" class="logo">AK</a>
             </div> -->
-            <!-- <nav class="header-nav">
+            <nav class="header-nav">
                 <ul class="menu__list">
                     <li class="menu__item"><a class="menu__link" href="#about">обо мне</a></li>
                     <li class="menu__item"><a class="menu__link" href="#projects">Мои проекты</a></li>
                     <li class="menu__item"><a class="menu__link" href="#competencies">компетенции</a></li>
                     <li class="menu__item"><a class="menu__link" href="#contacts">контакты</a></li>
                 </ul>
-            </nav> -->
+            </nav>
+            
         </div>
     </header>
     <main>
@@ -42,7 +35,9 @@
             <div class="container">
                 <div class="hero__inner">
                     <h1 class="hero__head">Привет, я Андрей — Frontend-разработчик</h1>
+                    <div class="burger__btn"></div>
                 </div>
+                
             </div>
         </section>
         <section class="section__menu" id="menu">
@@ -165,13 +160,22 @@
                     <a class="mail" href="mailto:i@korolev-andrey.ru" target="blank">
                         <h4>i@korolev-andrey.ru</h4>
                     </a>
-                    <div class="contacts__socials">
+                    <a class="tg" href="https://t.me/Andrey_Korolev13" target="blank">
+                        <h4>Andrey_Korolev13</h4>
+                    </a>
+                    <a class="wa" href="https://wa.me/89802404215" target="blank">
+                        <h4>Wa/+79802404215</h4>
+                    </a>
+                    <!-- <div class="contacts__socials">
                         <a href="https://t.me/Andrey_Korolev13" target="blank"><img class="messenger" src="./resources/tg.png" alt="Телеграм"></a>
                         <a href="https://wa.me/89802404215" target="blank"><img class="messenger" src="./resources/whatsapp.png" alt="Whatsup"></a>
-                    </div>    
+                    </div>     -->
                 </div>
             </div> 
         </section>
+        <div class="burger">
+            <div class="burger__content"></div>
+        </div>
     </main>
     <footer class="footer">
         <div class="container"></div>
