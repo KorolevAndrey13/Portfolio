@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +34,7 @@
             <div class="container">
                 <div class="hero__inner">
                     <h1 class="hero__head">Привет, я Андрей — Frontend-разработчик</h1>
-                    <div class="burger__btn"></div>
+                    <div class=" js-burger-btn burger-btn"></div>
                 </div>
                 
             </div>
@@ -173,9 +172,12 @@
                 </div>
             </div> 
         </section>
-        <div class="burger">
-            <div class="burger__content"></div>
+        <!-- Бургер меню -->
+        <div class="js-burger burger">
+            <div class="js-burger__content burger__content"></div>
         </div>
+
+        <script src="burger.js"></script>
     </main>
     <footer class="footer">
         <div class="container"></div>
