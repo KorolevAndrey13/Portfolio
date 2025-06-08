@@ -143,7 +143,6 @@ a.logo{
     /* background-color: #011627; */
 }
 
-
 .burger-menu__link{
     /* display: block; */
     line-height: 67px;
@@ -1470,15 +1469,67 @@ footer{
             position: fixed;
             width: 50px;
             height: 50px;
-            background-color: red;
+            /* background-color: red; */
             right: 30px;
             top: 10px;
+            
         }      
 
         .burger-btn_open{
-            background-color: blue;
+            background-color: black;
         }
 
+        .burger-btn span{
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background-color: white;
+            left: 5px;
+            transition: transform .5s, opacity .5s, background-color .5s;
+        }
+
+        .burger-btn span:nth-child(1) {
+            transform: translateY(10px);
+        }
+
+        .burger-btn span:nth-child(2) {
+            transform: translateY(25px);
+        }
+
+        .burger-btn span:nth-child(3) {
+            transform: translateY(40px);
+        }
+
+        /* .burger-btn_open .burger-btn span:nth-child(1){
+            transform: translateY(0) rotate(45deg);
+        }
+
+        .burger-btn_open .burger-btn span:nth-child(2){
+            opacity: 0;
+        }
+
+        .burger-btn_open .burger-btn span:nth-child(2){
+            opacity: 0;
+        } */
+
+        /* .burger-btn_open span{
+           transition: transform:rotate(-45deg);
+        } */
+
+        /* .burger-btn_open span:nth-child(1) {
+            transform: translateY(10px);
+            transform: rotateY('45');
+        }
+
+        .burger-btn_open span:nth-child(2) {
+            transform: translateY(25px);
+        }
+
+        .burger-btn_open span:nth-child(3) {
+            transform: translateY(40px);
+        }
+         */
+         
         .logo__box{
             width: 50px;
             height: 50px;
@@ -1572,10 +1623,11 @@ footer{
         }
 
         .burger-btn{
-            background-color: red;
             right: 30px;
             top: 10px;
         }      
+        
+      
 
         .logo__box{
             width: 50px;
