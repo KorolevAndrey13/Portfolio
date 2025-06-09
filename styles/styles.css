@@ -1500,17 +1500,17 @@ footer{
             transform: translateY(40px);
         }
 
-        /* .burger-btn_open .burger-btn span:nth-child(1){
-            transform: translateY(0) rotate(45deg);
+        .burger-btn_open span:nth-child(1){
+            transform: translateY(22px) rotate(-495deg);
         }
 
-        .burger-btn_open .burger-btn span:nth-child(2){
+        .burger-btn_open span:nth-child(2){
             opacity: 0;
         }
 
-        .burger-btn_open .burger-btn span:nth-child(2){
-            opacity: 0;
-        } */
+        .burger-btn_open span:nth-child(3){
+            transform: translateY(22px) rotate(495deg);
+        }
 
         /* .burger-btn_open span{
            transition: transform:rotate(-45deg);
