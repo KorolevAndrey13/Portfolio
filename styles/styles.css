@@ -85,6 +85,7 @@ overflow: hidden;
     width: 67px;
     height: 67px;
     color: #F5F5F5;
+    margin-bottom: 30px;
 }
 
 a.logo{
@@ -295,7 +296,7 @@ a.logo{
 
 .about__inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     column-gap: 30px;
 }
@@ -1511,24 +1512,6 @@ footer{
         .burger-btn_open span:nth-child(3){
             transform: translateY(22px) rotate(495deg);
         }
-
-        /* .burger-btn_open span{
-           transition: transform:rotate(-45deg);
-        } */
-
-        /* .burger-btn_open span:nth-child(1) {
-            transform: translateY(10px);
-            transform: rotateY('45');
-        }
-
-        .burger-btn_open span:nth-child(2) {
-            transform: translateY(25px);
-        }
-
-        .burger-btn_open span:nth-child(3) {
-            transform: translateY(40px);
-        }
-         */
          
         .logo__box{
             width: 50px;
